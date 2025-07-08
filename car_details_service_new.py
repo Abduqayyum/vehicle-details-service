@@ -4,13 +4,9 @@ from fastapi.responses import JSONResponse
 from transformers import ViTForImageClassification, AutoImageProcessor
 from PIL import Image
 import torch
-import io
 from ultralytics import YOLO
 import asyncio
-import uuid
 import numpy as np
-from config import settings
-from minio import Minio
 import filetype
 import cv2
 

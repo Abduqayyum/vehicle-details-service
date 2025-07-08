@@ -11,15 +11,9 @@ COPY requirements.txt .
 
 COPY car_details_service_new.py .
 
-COPY config.py .
-
-COPY .env .
-
 COPY vit-car-model/ vit-car-model/
 
 COPY vit-color-model/ vit-color-model/
-
-COPY latest-license-plate-model.pt .
 
 RUN pip install -r requirements.txt
 
