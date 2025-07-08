@@ -1,6 +1,0 @@
-services:
-  car-details-service:
-    image: ${DOCKER_HUB}${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}:${CI_COMMIT_REF_NAME}
-    restart: unless-stopped
-    ports:
-      - "3060:3060"
